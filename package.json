@@ -1,0 +1,43 @@
+{
+  "name": "@gormus/package-release-demo",
+  "version": "1.0.0",
+  "description": "A demo for creating automated releases for a node package",
+  "keywords": [
+    "demo",
+    "node",
+    "npm",
+    "semver",
+    "release",
+    "publish"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Osman Gormus",
+    "email": "osman@gorm.us",
+    "url": "https://gorm.us"
+  },
+  "homepage": "https://github.com/gormus/node-package-release-demo#readme",
+  "bugs": {
+    "url": "https://github.com/gormus/node-package-release-demo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gormus/node-package-release-demo.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": "Use npm package manager.",
+    "npm": ">=10.9.0",
+    "yarn": "Use npm package manager.",
+    "bun": "Use npm package manager."
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
