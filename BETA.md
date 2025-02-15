@@ -14,3 +14,5 @@ add 'graphiteWidth' option
 Update PAT permissions
 
 breaking changes
+breaking changes
+breaking changes
