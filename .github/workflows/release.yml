@@ -37,30 +37,24 @@ jobs:
       - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
         run: npm audit signatures
 
-      - name: Determine version bump & create a release
-        id: release
-        uses: cycjimmy/semantic-release-action@v4
-        with:
-          semantic_version: 21.1.1
-          branches: |
-            [
-              '+([0-9])?(.{+([0-9]),x}).x',
-              'main',
-              {
-                name: 'beta',
-                prerelease: true
-              },
-              {
-                name: 'alpha',
-                prerelease: true
-              }
-            ]
+      - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release
 
-      - name: Publish package to GitHub Packages
-        if: steps.release.outputs.new_release_published == 'true'
-        run: npm publish --access=restricted
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # - name: Determine version bump & create a release
+      #   id: release
+      #   uses: cycjimmy/semantic-release-action@v4
+      #   with:
+      #     semantic_version: 21.1.1
+      #     branches: |
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.NPM_TOKEN }}
+      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      # - name: Publish package to GitHub Packages
+      #   if: steps.release.outputs.new_release_published == 'true'
+      #   run: npm publish --access=restricted
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
