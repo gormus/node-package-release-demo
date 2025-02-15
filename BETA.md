@@ -12,3 +12,5 @@ The default graphite width of 10mm is always used for performance reasons.
 add 'graphiteWidth' option
 
 Update PAT permissions
+
+breaking changes
