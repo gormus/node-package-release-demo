@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.0.4](https://github.com/gormus/node-package-release-demo/compare/v4.0.3...v4.0.4) (2025-02-16)
+
+
+### Bug Fixes
+
+* Change GitHub config email address ([a90828e](https://github.com/gormus/node-package-release-demo/commit/a90828e40eeefdb650672e7b962c5fbc809a9d3e))
+
 ## [4.0.3](https://github.com/gormus/node-package-release-demo/compare/v4.0.2...v4.0.3) (2025-02-16)
 
 
