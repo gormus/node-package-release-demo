@@ -35,20 +35,20 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      - name: Add major and minor versions as tags
-        if: ${{ steps.release.outputs.release_created }}
-        run: |
-          echo "Creating additional tags for: ${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}.${{ steps.release.outputs.patch }}"
-          git config --global user.email "osman@gorm.us"
-          git config --global user.name "Release Please"
-          git tag -d v${{ steps.release.outputs.major }} || true
-          git tag -d v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }} || true
-          git push origin :v${{ steps.release.outputs.major }} || true
-          git push origin :v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }} || true
-          git tag -a v${{ steps.release.outputs.major }} -m "Release v${{ steps.release.outputs.major }}"
-          git tag -a v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }} -m "Release v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}"
-          git push origin v${{ steps.release.outputs.major }}
-          git push origin v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}
+      # - name: Add major and minor versions as tags
+      #   if: ${{ steps.release.outputs.release_created }}
+      #   run: |
+      #     echo "Creating additional tags for: ${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}.${{ steps.release.outputs.patch }}"
+      #     git config --global user.email "osman@gorm.us"
+      #     git config --global user.name "Release Please"
+      #     git tag -d v${{ steps.release.outputs.major }} || true
+      #     git tag -d v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }} || true
+      #     git push origin :v${{ steps.release.outputs.major }} || true
+      #     git push origin :v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }} || true
+      #     git tag -a v${{ steps.release.outputs.major }} -m "Release v${{ steps.release.outputs.major }}"
+      #     git tag -a v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }} -m "Release v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}"
+      #     git push origin v${{ steps.release.outputs.major }}
+      #     git push origin v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
