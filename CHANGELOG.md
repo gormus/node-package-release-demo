@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.0.5](https://github.com/gormus/node-package-release-demo/compare/v4.0.4...v4.0.5) (2025-02-16)
+
+
+### Bug Fixes
+
+* Comment out creating additional tags ([c2eda02](https://github.com/gormus/node-package-release-demo/commit/c2eda02cdf217581c2f776003bc3e5ef7b47ea11))
+
 ## [4.0.4](https://github.com/gormus/node-package-release-demo/compare/v4.0.3...v4.0.4) (2025-02-16)
 
 
