@@ -1,7 +1,7 @@
 {
   "name": "@gormus/package-release-demo",
   "description": "A demo for creating automated releases for a node package",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "keywords": [
     "demo",
     "node",
