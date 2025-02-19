@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.2.0](https://github.com/gormus/node-package-release-demo/compare/v4.1.0...v4.2.0) (2025-02-19)
+
+
+### Features
+
+* Create CODE_OF_CONDUCT.md ([ba5731e](https://github.com/gormus/node-package-release-demo/commit/ba5731e2ba4493ce2f887757cbfa4694753b948a))
+
 ## [4.1.0](https://github.com/gormus/node-package-release-demo/compare/v4.0.5...v4.1.0) (2025-02-16)
 
 
