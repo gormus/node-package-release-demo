@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.3.0](https://github.com/gormus/node-package-release-demo/compare/v4.2.0...v4.3.0) (2025-04-04)
+
+
+### Features
+
+* create a release for recent changes ([ca835de](https://github.com/gormus/node-package-release-demo/commit/ca835de3e31dbbd8b6c05c53c80f1cdba13d4a5b))
+
 ## [4.2.0](https://github.com/gormus/node-package-release-demo/compare/v4.1.0...v4.2.0) (2025-02-19)
 
 
