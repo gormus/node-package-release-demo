@@ -27,6 +27,8 @@ jobs:
           # for more options
           release-type: node
           target-branch: ${{ github.ref_name }}
+          config-file: .github/release-please/.release-please-config.json
+          manifest-file: .github/release-please/.release-please-manifest.json
 
       - name: Checkout repository
         uses: actions/checkout@v4
